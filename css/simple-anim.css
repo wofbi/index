@@ -1,0 +1,45 @@
+article {
+    cursor: pointer;
+}
+
+article:hover {
+    filter: brightness(1.2);
+    transition: 0.2s;
+}
+
+button:hover {
+    transition: 0.2s;
+}
+
+h1 {
+    padding: 0.3em;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    left: -0.16em; /* 根据需要调整位置 */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%; /* 调整竖条高度 */
+    width: 0.2em; /* 调整竖条宽度 */
+    background-color: var(--accent); /* 竖条颜色 */
+}
+
+h2 {
+    padding: 0.3em;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: -0.16em; /* 根据需要调整位置 */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%; /* 调整竖条高度 */
+    width: 0.18em; /* 调整竖条宽度 */
+    background-color: var(--accent); /* 竖条颜色 */
+}
+
